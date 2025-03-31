@@ -1,0 +1,51 @@
+/* Custom CSS for label transitions */
+.label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * 0.05s);
+}
+
+.peer:focus~.label .label-char,
+.peer.not-empty~.label .label-char {
+    transform: translateY(-23px);
+    font-size: 14px;
+    color: black;
+    /* color: black; */
+}
+
+/* Style for the underline bar */
+.bar::before,
+.bar::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+}
+
+@media (prefers-color-scheme: dark) {
+    .peer:focus~.label .label-char,
+    .peer.not-empty~.label .label-char {
+        color: white;
+    }
+
+    .bar::before,
+    .bar::after {
+        background: #5264AE;
+    }
+}
+
+.bar::before {
+    left: 50%;
+}
+
+.bar::after {
+    right: 50%;
+}
+
+/* Underline bar when input is focused */
+.peer:focus~.bar::before,
+.peer:focus~.bar::after {
+    width: 50%;
+}
