@@ -17,7 +17,7 @@ interface DevFormProps {
     user: User;
 }
 
-const DevPage: React.FC<DevFormProps> = ({ user }:DevFormProps) => {
+const DevPage: React.FC<DevFormProps> = ({ user }) => {
     const [name, setName] = useState<string>(user.name);
     const [phoneNumber, setPhoneNumber] = useState<string>(user.phone_number);
     const [location, setLocation] = useState<string>(user.location);
