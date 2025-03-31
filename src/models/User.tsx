@@ -1,4 +1,4 @@
-class User {
+export class User {
     id: number;
     name: string;
     phone_number: string;
@@ -46,5 +46,3 @@ class User {
         this.feedback = feedback || '';
     }
 }
-
-export default User;
