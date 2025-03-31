@@ -46,3 +46,5 @@ export class User {
         this.feedback = feedback || '';
     }
 }
+
+export default User;
