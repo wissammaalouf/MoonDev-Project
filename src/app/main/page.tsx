@@ -44,7 +44,7 @@ const Main = () => {
 
     return (
         <div  className="bg-white dark:bg-gray-900">
-            <div className="bg-gray-200 dark:bg-gray-500 pb-3">
+            <div className="bg-gray-200 dark:bg-gray-700 pb-3">
                 {(!userType || (userType !== 'developer' && userType !== 'evaluator')) &&
                     <div className='flex justify-end'>
                         <LogOutButton
