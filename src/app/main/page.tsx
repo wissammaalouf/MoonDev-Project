@@ -2,10 +2,10 @@
 
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react';
-import DevPage from '../developer-page/page';
 import LogOutButton from '@/app/items/button/LogButton';
-import EvalPage from '../evaluator-page/page';
 import User from '@/models/User';
+import DevPage from '../pages-components/developer-comp/DevPage';
+import EvalPage from '../pages-components/evaluator-comp/EvalPage';
 
 const Main = () => {
     const [userType, setUserType] = useState<string | null>(null);

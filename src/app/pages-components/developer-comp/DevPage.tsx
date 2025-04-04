@@ -13,11 +13,11 @@ import UserController from "@/controllers/UserController";
 import acceptedImage from '../../Pics/accepted.png';
 import rejectedImage from "../../Pics/rejected.png";
 
-interface DevFormProps {
+interface DevPage {
     user: User;
 }
 
-const DevPage: React.FC<DevFormProps> = ({ user }) => {
+const DevPage: React.FC<DevPage> = ({ user }) => {
     const [name, setName] = useState<string>(user.name);
     const [phoneNumber, setPhoneNumber] = useState<string>(user.phone_number);
     const [location, setLocation] = useState<string>(user.location);

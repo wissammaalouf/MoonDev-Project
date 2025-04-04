@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import EvalDevView from "../evaluator-dev-view/page";
 import User from "@/models/User";
 import UserController from "@/controllers/UserController";
-import MyInput from "../items/input/MyInput";
-import MyButton from "../items/button/MyButton";
-import EvalForm from "../evaluator-form/page";
+import MyInput from "@/app/items/input/MyInput";
+import MyButton from "@/app/items/button/MyButton";
+import EvalDevView from "./EvalDevView";
+import EvalForm from "./EvalForm";
 
 interface DevFormProps {
     user: User;
