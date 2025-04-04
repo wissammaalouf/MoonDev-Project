@@ -53,8 +53,9 @@ class FileController {
         return data;
     }
 
-    static async deleteFile(filePath: string) {
+    static async deleteFile(pic_url: string) {
         const bucketName = 'files';
+        const filePath = "profile_pics/"+pic_url.substring(pic_url.lastIndexOf('/') + 1);
 
         const { data, error } = await supabase.storage
             .from(bucketName)
