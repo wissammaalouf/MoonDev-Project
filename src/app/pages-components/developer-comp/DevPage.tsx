@@ -10,8 +10,8 @@ import User from "@/models/User";
 import FileController from "@/controllers/FileController";
 import UserController from "@/controllers/UserController";
 
-import acceptedImage from '../../Pics/accepted.png';
-import rejectedImage from "../../Pics/rejected.png";
+import acceptedImage from '@/Pics/accepted.png';
+import rejectedImage from "@/Pics/rejected.png";
 
 interface DevPage {
     user: User;
